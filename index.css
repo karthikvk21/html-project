@@ -1,0 +1,64 @@
+.solutions-text {
+    font-family: 'Helvetica Neue';
+    font-weight: 700;
+    font-size: 48px;
+    color: #343434;
+
+}
+
+.our-platform-text {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #535353;
+}
+
+.solution-background {
+    background-color: #F7EFF0;
+}
+
+.Data-collection-text {
+    font-family: 'Helvetica Neue';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.section {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.section>* {
+    width: 50%;
+}
+
+.section-img {
+    position: relative;
+    display: flex;
+}
+
+.section-img-inner {
+    height: 100vh;
+    position: fixed;
+    right: 5%;
+    width: 40%;
+    top: 0;
+    mix-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    filter: blur(30px);
+    opacity: 0;
+    background-position: 50% 40%;
+    /* transition: .6s ease, opacity .6s ease, background-position .8s ease; */
+}
+
+.section.active .section-img-inner {
+    opacity: 1;
+    background-position: 50% 50%;
+    filter: blur(0);
+}
